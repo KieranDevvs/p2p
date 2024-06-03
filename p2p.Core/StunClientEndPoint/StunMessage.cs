@@ -21,7 +21,7 @@ public class StunMessage
     /// <summary>
     /// Gets transaction ID.
     /// </summary>
-    public Guid TransactionId { get; private set; }
+    public Guid TransactionId { get; private set; } = Guid.NewGuid();
 
     /// <summary>
     /// Gets or sets IP end point what was actually connected to STUN server. Returns null if not specified.
@@ -108,14 +108,6 @@ public class StunMessage
     {
         IPv4 = 0x01,
         IPv6 = 0x02,
-    }
-
-    /// <summary>
-    /// Default constructor.
-    /// </summary>
-    public StunMessage()
-    {
-        TransactionId = Guid.NewGuid();
     }
 
     /// <summary>
