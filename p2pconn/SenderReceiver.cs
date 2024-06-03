@@ -1,4 +1,5 @@
-﻿using p2pconn;
+﻿using p2p.Core.Cryptography;
+using p2pconn;
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -6,7 +7,6 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using UdtSharp;
-using Cryptography;
 
 namespace p2pcopy
 {
