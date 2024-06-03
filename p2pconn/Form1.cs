@@ -12,7 +12,7 @@ using System.Threading;
 using System.Windows.Forms;
 using UdtSharp;
 using System.IO;
-using p2p.StunServer;
+using p2p.Core.StunServer;
 using System.Threading.Tasks;
 
 namespace p2pconn
