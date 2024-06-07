@@ -2,6 +2,7 @@
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
+using System.Linq;
 
 namespace p2p.Core.Cryptography;
 
@@ -106,7 +107,7 @@ public class Aes256
                     byte[] receivedHash = new byte[HmacSha256Length];
                     ms.Read(receivedHash, 0, receivedHash.Length);
 
-                    if (!SafeComparison.AreEqual(hash, receivedHash))
+                    if (!Enumerable.SequenceEqual(hash, receivedHash))
                     {
                         throw new CryptographicException("Invalid message authentication code (MAC).");
                     }
