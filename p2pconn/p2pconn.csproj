@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="UdtSharp" Version="0.1.0--date20201004-0708.git-86da089" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\p2p.Core\p2p.Core.csproj" />
   </ItemGroup>
 
